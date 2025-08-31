@@ -137,7 +137,7 @@ const backendData = {
 console.log("Live data being sent to backend:", backendData)
 
 // Send to backend for AI recommendations
-const res = await fetch('http://localhost:5000/predict', {
+const res = await fetch('https://skypulse-y0zz.onrender.com/predict', {
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify(backendData)
